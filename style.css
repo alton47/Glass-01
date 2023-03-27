@@ -84,8 +84,8 @@ h3{
 
 .link{
     display: flex;
-    margin: 5px 0px;
-    padding: 5px 7px;
+    margin: 18px 0px;
+    padding: 5px 10px;
     align-items: center;
 }
 
@@ -105,14 +105,68 @@ h3{
 .pro img{
     position: absolute;
     top: -10;
+    right: 10%;
 }
 
 .pro h2{
     color: white;
     width: 40%;
+    font-weight: 700;
+}
+
+.user p{
+    font-size: 13px;
 }
 
 .games{
     flex: 2;
 }
 
+.status{
+    margin-bottom: 8px;
+}
+
+.status input{
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border: none;
+    width: 50%;
+    border-radius: 2px;
+}
+
+.games{
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.4));
+    border-radius: 35px;
+    padding: 15px;
+    box-shadow: 6px 6px 50px rgba(122, 122, 122, 0.4) ;
+}
+
+.card p{
+    font-size: 16px;
+}
+
+.progress{
+    background: linear-gradient(to right top, #1d7665, #a3912d);
+    width: 100%;
+    height: 25%;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236, 236, 236);
+    position: absolute;
+    left: 60%;
+}
